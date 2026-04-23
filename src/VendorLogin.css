@@ -1,0 +1,362 @@
+.vendor-login-container {
+  display: flex;
+  width: 1245.65px;
+  height: 832px;
+  background-color: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Left Side */
+.vendor-login-left {
+  flex: 1;
+  background: linear-gradient(135deg, #FFF5E6 0%, #FFE8CC 100%);
+  padding: 60px 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.vendor-login-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  position: absolute;
+  width: 106px;
+  height: 106px;
+  top: 33px;
+  left: 35px;
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #FF6B3D;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.logo-text {
+  position: absolute;
+  width: 204px;
+  height: 87px;
+  top: 43px;
+  left: 136px;
+  font-size: 64px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #FFAF46 0%, #F94F13 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0;
+  line-height: 135%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.vendor-login-illustration {
+  width: 100%;
+  height: 280px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+}
+
+.vendor-login-tagline {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.vendor-login-description {
+  font-size: 27px;
+  color: #000000;
+  margin: 0;
+  line-height: 135%;
+  max-width: 359px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  height: 74px;
+  display: flex;
+  align-items: flex-start;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.vendor-login-footer {
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.vendor-login-footer p {
+  font-size: 12px;
+  color: #888;
+  margin: 0;
+  text-align: center;
+}
+
+/* Right Side */
+.vendor-login-right {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 60px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vendor-login-form-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.vendor-login-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+}
+
+.vendor-login-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 32px 0;
+  line-height: 1.4;
+}
+
+/* Form */
+.vendor-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.form-input {
+  padding: 12px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+  background-color: #f9f9f9;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #FF6B3D;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(255, 107, 61, 0.1);
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+.password-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input-wrapper .form-input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password-toggle:hover {
+  opacity: 0.7;
+}
+
+/* Checkbox */
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #FF6B3D;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  color: #1a1a1a;
+  cursor: pointer;
+  margin: 0;
+}
+
+/* Error Message */
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-left: 4px solid #c62828;
+}
+
+/* Button */
+.vendor-login-button {
+  padding: 14px 16px;
+  background-color: #FF6B3D;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  margin-top: 8px;
+}
+
+.vendor-login-button:hover {
+  background-color: #FF5A2A;
+}
+
+.vendor-login-button:active {
+  transform: scale(0.98);
+}
+
+.vendor-login-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Contact Link */
+.vendor-login-contact {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 24px;
+}
+
+.vendor-login-contact a {
+  color: #FF6B3D;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.vendor-login-contact a:hover {
+  color: #FF5A2A;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .vendor-login-container {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .vendor-login-left {
+    padding: 40px 30px;
+    min-height: 400px;
+  }
+
+  .vendor-login-right {
+    padding: 40px 30px;
+    min-height: 400px;
+  }
+
+  .vendor-login-tagline {
+    font-size: 24px;
+  }
+
+  .vendor-login-form-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .vendor-login-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .vendor-login-left {
+    padding: 30px 20px;
+  }
+
+  .vendor-login-right {
+    padding: 30px 20px;
+  }
+
+  .vendor-login-logo {
+    margin-bottom: 20px;
+  }
+
+  .vendor-login-illustration {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .illustration-svg {
+    width: 150px;
+    height: 150px;
+  }
+
+  .vendor-login-tagline {
+    font-size: 20px;
+  }
+
+  .vendor-login-title {
+    font-size: 24px;
+  }
+}

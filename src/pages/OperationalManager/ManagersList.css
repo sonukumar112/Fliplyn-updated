@@ -1,0 +1,336 @@
+/* Managers List specific styles */
+
+.page-header.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.table-container {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  border: 1px solid #eee;
+}
+
+.managers-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.managers-table th {
+  background-color: #FFF2E8; /* Light orange */
+  color: #333;
+  font-weight: 600;
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #FFE4D0;
+}
+
+.managers-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  color: #555;
+  vertical-align: middle;
+}
+
+.managers-table tr:hover {
+  background-color: #fafafa;
+}
+
+.managers-table tr:last-child td {
+  border-bottom: none;
+}
+
+.status-text.active {
+  color: #4CAF50;
+  font-weight: 600;
+}
+
+.status-text.inactive {
+  color: #f44336;
+  font-weight: 600;
+}
+
+.action-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  cursor: pointer;
+  color: #888;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.icon:hover {
+  color: #F05A28;
+}
+
+.edit-icon {
+  color: #F05A28;
+}
+
+.delete-icon {
+  color: #f44336;
+}
+
+/* Modal Inputs overrides for icons */
+.icon-input {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 14px;
+  z-index: 2;
+}
+
+.form-group.icon-input label {
+  display: none; /* Hide labels if we are just using placeholders */
+}
+
+.icon-input input,
+.icon-input select {
+  width: 100%;
+  padding: 12px 12px 12px 40px !important;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.icon-input input:focus,
+.icon-input select:focus {
+  border-color: #F05A28;
+}
+
+.modal-actions-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.modal-actions-row button {
+  padding: 10px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+  transition: all 0.2s;
+}
+
+.modal-actions-row .btn-primary {
+  background-color: #F05A28;
+  color: white;
+}
+
+.modal-actions-row .btn-primary:hover {
+  background-color: #d94d20;
+}
+
+.modal-actions-row .btn-primary:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.modal-actions-row .btn-outline {
+  background: white;
+  color: #F05A28;
+  border: 1px solid #F05A28;
+}
+
+.modal-actions-row .btn-outline:hover {
+  background: #FFF2E8;
+}
+
+.modal-actions-row .btn-outline:disabled {
+  background-color: #f5f5f5;
+  color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.create-manager-modal {
+  max-width: 450px;
+}
+
+.create-manager-modal .modal-header {
+  background-color: #FFF2E8;
+  border-bottom: 2px solid #F05A28;
+}
+
+.create-manager-modal .modal-header h3 {
+  color: #F05A28;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.create-manager-modal .form-group {
+  margin-bottom: 18px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+  border-color: #F05A28;
+}
+
+.form-group.icon-input label {
+  display: none; /* Hide labels for icon inputs */
+}
+
+/* Error Message */
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-left: 4px solid #c62828;
+}
+
+/* Status Badge */
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.status-badge.active {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border-color: #4caf50;
+}
+
+.status-badge.inactive {
+  background-color: #ffebee;
+  color: #c62828;
+  border-color: #f44336;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #999;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.close-btn:hover {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.modal-body {
+  padding: 25px;
+}
+
+.btn-primary {
+  background-color: #F05A28;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #d94d20;
+}
+
+.btn-primary:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.vout-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.vout-body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 32px 60px;
+}
+
+.vout-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+  letter-spacing: -0.5px;
+}
+
+.vout-subtitle {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 28px;
+}
+
+/* ─── Grid ─── */
+.vout-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+/* ─── Card ─── */
+.vout-card {
+  background: #fff;
+  border-radius: 14px;
+  border: 1.5px solid #ececec;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.vout-card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.vout-card-img {
+  width: 110px;
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 12px;
+}
+
+.vout-card-body {
+  flex: 1;
+  padding: 14px 16px 14px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vout-card-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 3px;
+  line-height: 1.2;
+}
+
+.vout-card-desc {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.vout-card-status {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.vout-status-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.vout-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.vout-dot--open {
+  background: #22c55e;
+  box-shadow: 0 0 0 2px rgba(34,197,94,0.2);
+}
+
+.vout-dot--closed {
+  background: #ef4444;
+  box-shadow: 0 0 0 2px rgba(239,68,68,0.2);
+}
+
+.vout-status-text {
+  font-size: 11.5px;
+  color: #555;
+}
+
+.vout-open-btn {
+  align-self: flex-start;
+  padding: 6px 18px;
+  background: #FF5500;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(255,85,0,0.25);
+}
+
+.vout-open-btn:hover {
+  background: #e04c00;
+}
+
+/* ─── Bottom Bar ─── */
+.vout-bottom {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.vout-manage-btn {
+  padding: 11px 28px;
+  background: #FF5500;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 14px rgba(255,85,0,0.3);
+}
+
+.vout-manage-btn:hover {
+  background: #e04c00;
+  box-shadow: 0 6px 18px rgba(255,85,0,0.4);
+}

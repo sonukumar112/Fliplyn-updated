@@ -1,0 +1,90 @@
+.manager-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  font-family: 'Inter', sans-serif;
+}
+
+.manager-header .brand-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  cursor: pointer;
+  width: 148px;
+  height: 53px;
+  opacity: 1;
+}
+
+.manager-header .logo-image {
+  height: 35px;
+  object-fit: contain;
+  margin-right: -5px;
+}
+
+.fliplyn-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 135%;
+  letter-spacing: 0%;
+  background: transparent;
+  color: #333;
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+
+.manager-header .logo-icon {
+  background-color: #F05A28;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.header-user-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.help-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  background: white;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  opacity: 1;
+}
+
+.help-icon:hover {
+  border-color: #F05A28;
+  color: #F05A28;
+}
+
+.user-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}

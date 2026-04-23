@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.vl-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* ─── Left Panel ─── */
+.vl-left {
+  width: 586px;
+  min-height: 100vh;
+  background: #FFF6EA;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 33px 0 36px 35px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.vl-left::before {
+  content: '';
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 340px;
+  height: 280px;
+  background: radial-gradient(ellipse, rgba(255,175,70,0.18) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.vl-logo {
+  display: flex;
+  align-items: center;
+  width: 305px;
+  height: 106px;
+  gap: 16px;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.vl-logo-icon {
+  width: 106px;
+  height: 106px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.vl-logo-img {
+  width: 106px;
+  height: 106px;
+  object-fit: contain;
+}
+
+.vl-logo-text {
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.35;
+  background: linear-gradient(135deg, #FFAF46 0%, #F94F13 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.vl-illustration {
+  position: absolute;
+  top: 168px;
+  left: 31px;
+  width: 525px;
+  height: 290px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.vl-illus-img {
+  width: 525px;
+  height: 290px;
+  object-fit: contain;
+}
+
+.vl-tagline {
+  position: absolute;
+  top: 479px;
+  left: 54px;
+  width: 447px;
+  height: 45px;
+  font-size: 37px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1;
+  letter-spacing: 0;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.vl-desc {
+  position: absolute;
+  top: 536px;
+  left: 54px;
+  width: 447px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  z-index: 2;
+}
+
+.vl-footer {
+  position: absolute;
+  bottom: 32px;
+  left: 54px;
+  z-index: 2;
+}
+
+.vl-footer p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* ─── Right Panel ─── */
+.vl-right {
+  flex: 1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 40px;
+  align-self: stretch;
+}
+
+.vl-form-wrap {
+  width: 100%;
+  max-width: 380px;
+}
+
+.vl-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+  letter-spacing: -0.5px;
+}
+
+.vl-subtitle {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 32px;
+}
+
+.vl-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vl-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.vl-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+.vl-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #1a1a1a;
+  background: #fafafa;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+
+.vl-input:focus {
+  border-color: #FF5500;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(255,85,0,0.08);
+}
+
+.vl-input::placeholder {
+  color: #bbb;
+  font-size: 13px;
+}
+
+.vl-pw-wrap {
+  position: relative;
+}
+
+.vl-pw-wrap .vl-input {
+  padding-right: 42px;
+}
+
+.vl-pw-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.vl-remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vl-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: #FF5500;
+  cursor: pointer;
+}
+
+.vl-check-label {
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+}
+
+.vl-btn {
+  width: 100%;
+  padding: 13px;
+  background: #FF5500;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 4px 14px rgba(255,85,0,0.35);
+}
+
+.vl-btn:hover {
+  background: #e04c00;
+  box-shadow: 0 6px 18px rgba(255,85,0,0.4);
+}
+
+.vl-btn:active {
+  transform: scale(0.98);
+}
+
+.vl-contact {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+}
+
+.vl-contact a {
+  color: #FF5500;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.vl-contact a:hover {
+  text-decoration: underline;
+}

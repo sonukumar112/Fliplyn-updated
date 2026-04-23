@@ -1,0 +1,350 @@
+/* Vendors List specific styles */
+
+.page-header.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.table-container {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  border: 1px solid #eee;
+}
+
+.vendors-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.vendors-table th {
+  background-color: #FFF2E8; /* Light orange */
+  color: #333;
+  font-weight: 600;
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #FFE4D0;
+}
+
+.vendors-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  color: #555;
+  vertical-align: middle;
+}
+
+.vendors-table tr:hover {
+  background-color: #fafafa;
+}
+
+.vendors-table tr:last-child td {
+  border-bottom: none;
+}
+
+.orders-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.order-badge {
+  background-color: #FFF2E8;
+  color: #F05A28;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid rgba(240, 90, 40, 0.2);
+}
+
+.status-text.active {
+  color: #4CAF50;
+  font-weight: 600;
+}
+
+.status-text.inactive {
+  color: #f44336;
+  font-weight: 600;
+}
+
+.action-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  cursor: pointer;
+  color: #888;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.icon:hover {
+  color: #F05A28;
+}
+
+/* Modal Inputs overrides for icons */
+.icon-input {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 14px;
+  z-index: 2;
+}
+
+.form-group.icon-input label {
+  display: none; /* Hide labels if we are just using placeholders */
+}
+
+/* The .form-group input is defined in ManageOutlets.css, these classes assume that CSS is loaded globally or duplicated. Since React wraps CSS, let's be explicit */
+.icon-input input,
+.icon-input select {
+  width: 100%;
+  padding: 12px 12px 12px 40px !important;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.icon-input input:focus,
+.icon-input select:focus {
+  border-color: #F05A28;
+}
+
+.icon-input input:focus,
+.icon-input select:focus {
+  border-color: #F05A28;
+}
+
+.modal-actions-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.modal-actions-row button {
+  padding: 10px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+  transition: all 0.2s;
+}
+
+.modal-actions-row .btn-primary {
+  background-color: #F05A28;
+  color: white;
+}
+
+.modal-actions-row .btn-primary:hover {
+  background-color: #d94d20;
+}
+
+.modal-actions-row .btn-primary:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.modal-actions-row .btn-outline {
+  background: white;
+  color: #F05A28;
+  border: 1px solid #F05A28;
+}
+
+.modal-actions-row .btn-outline:hover {
+  background: #FFF2E8;
+}
+
+.modal-actions-row .btn-outline:disabled {
+  background-color: #f5f5f5;
+  color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.modal-actions-row.right-align {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.modal-actions-row.right-align button {
+  width: auto;
+  padding: 10px 30px;
+}
+
+.create-vendor-modal {
+  max-width: 400px;
+}
+
+.create-vendor-modal .modal-header {
+  background-color: #FFF2E8;
+  border-bottom: 2px solid #F05A28;
+}
+
+.create-vendor-modal .modal-header h3 {
+  color: #F05A28;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.create-vendor-modal .form-group {
+  margin-bottom: 18px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+  border-color: #F05A28;
+}
+
+.form-group.icon-input label {
+  display: none; /* Hide labels for icon inputs */
+}
+
+/* Error Message */
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-left: 4px solid #c62828;
+}
+
+/* Status Badge */
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+.status-badge.active {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border-color: #4caf50;
+}
+
+.status-badge.active:hover {
+  background-color: #c8e6c9;
+}
+
+.status-badge.inactive {
+  background-color: #ffebee;
+  color: #c62828;
+  border-color: #f44336;
+}
+
+.status-badge.inactive:hover {
+  background-color: #ffcdd2;
+}
+
+/* Icons styling */
+.action-icons .stalls-icon {
+  cursor: pointer;
+  color: #888;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.action-icons .stalls-icon:hover {
+  color: #F05A28;
+}
+
+/* Vendor Stalls Modal */
+.vendor-stalls-modal {
+  max-width: 600px;
+}
+
+.vendor-stalls-modal .modal-header {
+  background-color: #FFF2E8;
+  border-bottom: 2px solid #F05A28;
+}
+
+.vendor-stalls-modal .modal-header h3 {
+  color: #F05A28;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.stalls-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.stalls-table th {
+  background-color: #FFF2E8;
+  color: #333;
+  font-weight: 600;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #FFE4D0;
+}
+
+.stalls-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+
+.stalls-table tr:hover {
+  background-color: #fafafa;
+}
+
+.stalls-table tr:last-child td {
+  border-bottom: none;
+}
+
+.no-data {
+  text-align: center;
+  color: #999;
+  padding: 30px 20px;
+  font-size: 14px;
+}

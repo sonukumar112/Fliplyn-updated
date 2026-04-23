@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.vit-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f7f7f8;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.vit-body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 32px 60px;
+}
+
+/* ─── Outlet Header ─── */
+.vit-outlet-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 16px;
+}
+
+.vit-outlet-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.vit-outlet-name {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+  margin-bottom: 2px;
+}
+
+.vit-outlet-desc {
+  font-size: 13.5px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.vit-outlet-hours {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  color: #555;
+}
+
+.vit-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.vit-dot--open {
+  background: #22c55e;
+  box-shadow: 0 0 0 2px rgba(34,197,94,0.2);
+}
+
+.vit-dot--closed {
+  background: #ef4444;
+  box-shadow: 0 0 0 2px rgba(239,68,68,0.2);
+}
+
+.vit-reports-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  background: #FF5500;
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  white-space: nowrap;
+  box-shadow: 0 3px 10px rgba(255,85,0,0.3);
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.vit-reports-btn:hover {
+  background: #e04c00;
+}
+
+/* ─── Controls ─── */
+.vit-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.vit-search-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+}
+
+.vit-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.vit-search {
+  width: 100%;
+  padding: 10px 14px 10px 36px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #333;
+  background: #fff;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.2s;
+}
+
+.vit-search:focus {
+  border-color: #FF5500;
+}
+
+.vit-search::placeholder {
+  color: #bbb;
+}
+
+.vit-filter-tabs {
+  display: flex;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.vit-filter-tab {
+  padding: 9px 18px;
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.vit-filter-tab + .vit-filter-tab {
+  border-left: 1.5px solid #e0e0e0;
+}
+
+.vit-filter-tab--active {
+  background: #FF5500;
+  color: #fff;
+}
+
+.vit-filter-tab:not(.vit-filter-tab--active):hover {
+  background: #fff5f2;
+}
+
+/* ─── Table ─── */
+.vit-table-wrap {
+  background: #fff;
+  border-radius: 12px;
+  border: 1.5px solid #e8e8e8;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.vit-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vit-table thead tr {
+  background: #fafafa;
+  border-bottom: 1.5px solid #f0f0f0;
+}
+
+.vit-table th {
+  text-align: left;
+  padding: 13px 18px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.vit-table tbody tr {
+  border-bottom: 1px solid #f5f5f5;
+  transition: background 0.15s;
+}
+
+.vit-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.vit-table tbody tr:hover {
+  background: #fdf8f6;
+}
+
+.vit-table td {
+  padding: 15px 18px;
+  vertical-align: middle;
+}
+
+/* ─── Item Cell ─── */
+.vit-item-cell {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.vit-item-icon {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.vit-item-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 2px;
+}
+
+.vit-item-type {
+  font-size: 12px;
+  color: #888;
+}
+
+/* ─── Price ─── */
+.vit-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.vit-gst {
+  font-size: 11.5px;
+  color: #999;
+  margin-top: 2px;
+}
+
+/* ─── Availability Toggle ─── */
+.vit-avail-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vit-toggle {
+  width: 42px;
+  height: 24px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  transition: background 0.25s;
+  flex-shrink: 0;
+}
+
+.vit-toggle--on {
+  background: #22c55e;
+  justify-content: flex-end;
+}
+
+.vit-toggle--off {
+  background: #d1d5db;
+  justify-content: flex-start;
+}
+
+.vit-toggle-knob {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  transition: all 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+
+.vit-avail-label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.vit-avail--on {
+  color: #16a34a;
+}
+
+.vit-avail--off {
+  color: #9ca3af;
+}
